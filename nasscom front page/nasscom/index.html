@@ -9,9 +9,10 @@
   <!--Website Title-->
   <title>NASSCOM</title>
   <!--CSS Files-->
-  <link rel="shortcut icon" href="images/cover-image-1.png">
+  <link rel="shortcut icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/media-queries.css" />
   <!--Google Fonts-->
@@ -20,8 +21,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body class="style-3">
-  <div class="container-fluid bg1">
+<body class="scrollbar1">
+  <div class="container-fluid">
+
     <!--Navigation Bar-->
     <nav class="navbar navbar-default header animated fadeInDown">
       <div class="container-fluid">
@@ -41,30 +43,28 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#">OVERVIEW</a>
+              <a href="#overviews">OVERVIEW</a>
             </li>
             <li>
-              <a href="#">KEYTHEMES</a>
+              <a href="#keythemes">KEY THEMES</a>
             </li>
             <li>
-              <a href="#">SPONSORSHIP</a>
+              <a href="#sponsors">SPONSORSHIP</a>
             </li>
             <li>
-              <a href="#">SPEAKERS</a>
+              <a href="#speakers">SPEAKERS</a>
             </li>
             <li>
-              <a href="#">REGISTRATION</a>
+              <a href="#registration">REGISTRATION</a>
             </li>
             <li>
-              <a href="#">VENUE</a>
-            </li>
-            <li>
-              <a href="#">NILF2016</a>
+              <a href="#venue">VENUE</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
     <!--Top Section-->
     <div class="row top-section">
       <div class="col-md-12">
@@ -72,19 +72,19 @@
         <center>
           <p class="p1 animated fadeIn">
             5
-            <sup>th</sup> NASSCOM Big Data & Analytics Summit
+            <sup class="sup1">th</sup> NASSCOM Big Data & Analytics Summit
           </p>
           <h1 class="animated fadeIn">
             AI & Deep Learning
             <br />Transforming Enterprise Decision Making
           </h1>
-          <button class="register-btn">
+          <button class="register-btn animated fadeIn" onclick="window.open('#registration', '_parent')">
             REGISTER TODAY
           </button>
           <p class="p2 animated fadeIn">
             22
-            <sup>nd</sup>-23
-            <sup>rd</sup> June, 2017  |  HICC, Hyderabad
+            <sup class="sup2">nd</sup>-23
+            <sup class="sup2">rd</sup> June, 2017  |  HICC, Hyderabad
           </p>
         </center>
         <img class="animated fadeInRightBig right-hand" src="images/hand-right.png" />
@@ -93,9 +93,9 @@
     <!--Middle Section-->
     <div class="container bg2 middle-section">
       <!--Overview-->
-      <div class="row overview">
+      <div id="overviews" class="row overview">
         <div class="col-md-8 col-sm-12">
-          <img src="images/overview.png" alt="Overview"/>
+          <img src="images/img1.png" alt="Overview" />
         </div>
         <div class="col-md-4 col-sm-12" style="padding:20px;">
           <h3>OVERVIEW</h3>
@@ -106,46 +106,68 @@
             of AI. This year with the theme
             <b>‘AI and Deep Learning: Transforming Enterprise Decision Making’</b>, we are going to take it a level higher.
           </p>
-          <button class="register-btn">
+          <button class="register-btn" onclick="window.open('Concept Note - NASSCOM Big Data conference.pdf')">
             VIEW MORE
           </button>
         </div>
       </div>
+
       <!--Key Themes-->
-      <div class="row key-theme">
+      <div id="keythemes" class="row key-theme">
         <div class="col-md-12">
           <h3>KEY THEMES</h3>
         </div>
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="col-md-4 col-sm-12">
+        <div class="col-md-12">
+          <div class="col-md-offset-2 col-md-8 col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10">
+            <div class="col-md-4">
               <div class="box">
-                <img src="images/img2.png" alt="AI Horizontal Applications"/>
+                <img src="images/keytheme-1.jpg" alt="AI Horizontal Applications"/>
                 <h3 style="color:black;font-size: 20px;">
-                  AI Horizontal
-                  <br />Applications
+                  <a data-toggle="popover"
+                     data-content="
+                      <span class='pover'>Improving Customer Experience</span>
+                      <span class='pover'>Improving operational effectiveness</span>
+                      <span class='pover'>AI for risk management & fraud</span>
+                      <span class='pover'>AI for salesforce effectiveness</span>">AI Horizontal
+                  <br />Applications<br/><span class="glyphicon glyphicon-triangle-bottom"></span></a>
                 </h3>
               </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4">
               <div class="box">
-                <img src="images/img3.png" alt="AI Technology"/>
-                <h3 style="color:black;font-size: 20px;">AI Technology</h3>
+                <img src="images/keytheme-2.jpg" alt="AI Technology"/>
+                <h3 style="color:black;font-size: 20px;">
+                  <a data-toggle="popover"
+                     data-content="
+                      <span class='pover'>Current limitations of AI and deep learning</span>
+                      <span class='pover'>Deep learning for Image recognition</span>
+                      <span class='pover'>Deep learning for natural language processing and understanding</span>
+                      <span class='pover'>Is current AI improving on current analytic methods for structured data</span>
+                      <span class='pover'>The confluence of AI and BI</span>">AI Technology<br /><span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                </h3>
               </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4">
               <div class="box">
-                <img src="images/img4.png" alt="AI meets other exponential technologies"/>
+                <img src="images/keytheme-3.jpg" alt="AI meets other exponential technologies"/>
                 <h3 style="color:black;font-size: 20px;">
-                  AI meets other
+                  <a data-toggle="popover"
+                     data-content="
+                      <span class='pover'>AI and IOT</span>
+                      <span class='pover'>AI at scale on the cloud</span>
+                      <span class='pover'>AI in genomics</span>
+                      <span class='pover'>AI & Robotics</span>
+                      <span class='pover'>AI in autonomous driving</span>
+                      <span class='pover'>AI for virtual & augmented reality</span>">AI meets other
                   <br />Exponential
-                  <br />Technologies
+                  <br />Technologies<br /><span class="glyphicon glyphicon-triangle-bottom"></span></a>
                 </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <!--Tables-->
       <div class="row tables">
         <div class="col-md-offset-2 col-md-8 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10" style="margin-top: 70px;margin-bottom:70px;">
@@ -262,82 +284,511 @@
         </div>
       </div>
     </div>
+
     <!--Speakers-->
-    <div class="row speaker">
-      <div class="col-md-12">
-        <h3>SPEAKERS</h3>
+    <div id="speakers" class="container speakers">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>PAST SPEAKERS</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <center>
+            <img src="images/Guy-Peri.png" alt="Guy Peri" />
+            <p class="speaker-name">Guy Peri</p>
+            <p>P&G</p>
+          </center>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <img src="images/Vikor-Mayer.png" alt="Vikor Mayer" />
+            <p class="speaker-name">Vikor Mayer</p>
+            <p>Schönberger University of Oxford</p>
+          </center>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <img src="images/George-John.png" alt="George John" />
+            <p class="speaker-name">George John</p>
+            <p>AI focused Investor, Advisor & Board DirectorLLC</p>
+          </center>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <img src="images/venkat-achanta.png" alt="Venkat Achanta" />
+            <p class="speaker-name">Venkat Achanta</p>
+            <p>Walmart</p>
+          </center>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom:100px;">
+        <div class="col-md-3">
+          <center>
+            <img src="images/patrick.png" alt="Patrick Schwerdtfeger" />
+            <p class="speaker-name">Patrick Schwerdtfeger</p>
+            <p>Author & Speaker</p>
+          </center>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <img src="images/Anand-Iyer.png" alt="Anand Iyer" />
+            <p class="speaker-name">Anand Iyer</p>
+            <p>WellDoc</p>
+          </center>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <img src="images/Ritu-Aggarwal.png" alt="Ritu Aggarwal" />
+            <p class="speaker-name">Ritu Aggarwal</p>
+            <p>University of Maryland</p>
+          </center>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <img src="images/john-brahim.png" alt="John Brahim" />
+            <p class="speaker-name">John Brahim</p>
+            <p>Capgemini, CEO, Insights & Data Global Practice</p>
+          </center>
+        </div>
       </div>
     </div>
-    <div class="row speaker">
-      <div class="col-md-3">
-        <center>
-          <img src="images/Guy-Peri.png" alt="Guy Peri"/>
-          <p class="speaker-name">Guy Peri</p>
-          <p>P&G</p>
-        </center>
-      </div>
-      <div class="col-md-3">
-        <center>
-          <img src="images/Vikor-Mayer.png" alt="Vikor Mayer"/>
-          <p class="speaker-name">Vikor Mayer</p>
-          <p>Schönberger University of Oxford</p>
-        </center>
-      </div>
-      <div class="col-md-3">
-        <center>
-          <img src="images/George-John.png" alt="George John"/>
-          <p class="speaker-name">George John</p>
-          <p>AI focused Investor, Advisor & Board DirectorLLC</p>
-        </center>
-      </div>
-      <div class="col-md-3">
-        <center>
-          <img src="images/venkat-achanta.png" alt="Venkat Achanta"/>
-          <p class="speaker-name">Venkat Achanta</p>
-          <p>Walmart</p>
-        </center>
+
+    <!--Sponsorship opportunities-->
+    <div id="sponsors" class="container sponsors">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>SPONSORSHIP OPPORTUNITIES</h3>
+          <p>Leading big data companies sponsor the Big Data & Analytics Summit.</p>
+          <p class="p1">Sign up today and get the following benefits:</p>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-6 mar-btm">
+            <div class="col-md-4">
+              <img src="images/icn-1.png" />
+            </div>
+            <div class="col-md-8 div1">
+              <p>In this competitive market, association with a thought leadership program strategically boosts your brand visibility.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mar-btm">
+            <div class="col-md-4">
+              <img src="images/icn-2.png" />
+            </div>
+            <div class="col-md-8 div1">
+              <p>Prominence on NASSCOM website and on any communication with delegates as a run up to the event and post event, hence creating brand awareness amongst your target market.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mar-btm">
+            <div class="col-md-4">
+              <img src="images/icn-3.png" />
+            </div>
+            <div class="col-md-8 div1">
+              <p>Onsite branding opportunity with logos in the main event hall and lobby enhances the brand cognizance in the industry.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mar-btm">
+            <div class="col-md-4">
+              <img src="images/icn-4.png" />
+            </div>
+            <div class="col-md-8 div1">
+              <p>Some of the sponsorship packages allow exclusive networking opportunity including exclusive CXO access, connect programs.</p>
+            </div>
+          </div>
+          <div class="col-md-12 mar-btm">
+            <div class="col-md-offset-3 col-md-2">
+              <img src="images/icn-5.png" />
+            </div>
+            <div class="col-md-4 div1">
+              <p>Bespoke sponsorship packages<br />available based on your intent of<br />participation and budgets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 div2">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>DIGITAL BANKING PARTNER</p>
+              <img src="images/sponsors/yes-bank.png" />
+            </div>
+            <div class="col-md-3">
+              <p>DIGITIZING INDIA PARTNER</p>
+              <img src="images/sponsors/cisco.jpg" />
+            </div>
+          </div>
+          <!--PLATINUM SPONSORS-->
+          <div class="col-md-8 col-md-offset-2">
+            <p>PLATINUM SPONSORS</p>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <img src="images/sponsors/HSBC.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/ibm-logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/niit.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/tata-communications.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <img src="images/sponsors/Telstra.png" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/workfusion-logo.jpg" />
+            </div>
+          </div>
+          <!--GOLD SPONSORS-->
+          <div class="col-md-8 col-md-offset-2">
+            <p>GOLD SPONSORS</p>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <img src="images/sponsors/automation-anywhere.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/globallogic.png" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/hexaware.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/steelcase.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <img src="images/sponsors/tcs.jpg" />
+            </div>
+          </div>
+          <!--SILVER SPONSORS-->
+          <div class="col-md-8 col-md-offset-2">
+            <p>SILVER SPONSORS</p>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <img src="images/sponsors/cyient-logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/elcot.logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/exl.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/genpact.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <img src="images/sponsors/infopark-logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/Infosys.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/invest-holland.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/kpmg.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <img src="images/sponsors/microsoft.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/mindtree.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/syntel.jpg" />
+            </div>
+            <div class="col-md-3">
+              <img src="images/sponsors/ramanujan-it-city-logo.png" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <img src="images/sponsors/zensar-technologies.jpg" />
+            </div>
+          </div>
+
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>GLOBAL LEADERSHIP AWARDS SPONSOR</p>
+              <img src="images/sponsors/capgemini.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>TECHNOLOGY INNOVATION PARTNER</p>
+              <img src="images/sponsors/accenture.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>STUDIO SPONSORED BY</p>
+              <img src="images/sponsors/persistent-systems.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>BADGE & LANYARD SPONSOR</p>
+              <img src="images/sponsors/nttdata.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>BUSINESS INNOVATION PARTNER</p>
+              <img src="images/sponsors/cognizant.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>TRANSFORMATION PARTNER</p>
+              <img src="images/sponsors/hewlett-packard-enterprise.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>SPEAKERS' LOUNGE SPONSOR</p>
+              <img src="images/sponsors/wipro.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>MEDIA LOUNGE SPONSOR</p>
+              <img src="images/sponsors/wns.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>GALA EVENING CO-SPONSOR</p>
+              <img src="images/sponsors/bangladesh-hi-tech-park-authority.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>GALA EVENING CO-SPONSOR</p>
+              <img src="images/sponsors/thryve-digital.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>SESSION SPONSOR</p>
+              <img src="images/sponsors/itc.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>SESSION SPONSOR</p>
+              <img src="images/sponsors/larsen-toubro-infotech.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>SESSION SPONSOR</p>
+              <img src="images/sponsors/pitney-bowes.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>SESSION SPONSOR</p>
+              <img src="images/sponsors/virtu.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>COUNTRY PARTNER</p>
+              <img src="images/sponsors/Victoria_State_Government_logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>STATE PARTNER</p>
+              <img src="images/sponsors/maharashtra.gov.logo.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>SPECIAL SPONSOR</p>
+              <img src="images/sponsors/prysm-logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>LUNCH SPONSOR - 15 FEB</p>
+              <img src="images/sponsors/atsgreens-logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>LUNCH SPONSOR - 16 FEB</p>
+              <img src="images/sponsors/insideview.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>PROGRAM FOLDER SPONSOR</p>
+              <img src="images/sponsors/dlf.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>CONTENT PARTNER</p>
+              <img src="images/sponsors/bcg.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>HOSPITALITY PARTNER</p>
+              <img src="images/sponsors/Grand-hyatt.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>DIGITAL LIFE PARTNER</p>
+              <img src="images/sponsors/reliance-jio.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>REGISTRATION PARTNER</p>
+              <img src="images/sponsors/tecogis-logo.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>MOBILE APP PARTNER</p>
+              <img src="images/sponsors/kellton-new.png" />
+            </div>
+            <div class="col-md-3">
+              <p>FEEDBACK PARTNER</p>
+              <img src="images/sponsors/ma-foi-logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>SPEAKERS' GIFT PARTNER</p>
+              <img src="images/sponsors/teabox-logo.jpg" />
+            </div>
+            <div class="col-md-3">
+              <p>BEVERAGE PARTNER</p>
+              <img src="images/sponsors/Nestle.jpg" />
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-3">
+              <p>WEBCAST PARTNER</p>
+              <img src="images/sponsors/vouchpro.jpg" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row speaker" style="margin-bottom:100px;">
-      <div class="col-md-3">
-        <center>
-          <img src="images/patrick.png" alt="Patrick Schwerdtfeger"/>
-          <p class="speaker-name">Patrick Schwerdtfeger</p>
-          <p>Author & Speaker</p>
-        </center>
-      </div>
-      <div class="col-md-3">
-        <center>
-          <img src="images/Anand-Iyer.png" alt="Anand Iyer"/>
-          <p class="speaker-name">Anand Iyer</p>
-          <p>WellDoc</p>
-        </center>
-      </div>
-      <div class="col-md-3">
-        <center>
-          <img src="images/Ritu-Aggarwal.png" alt="Ritu Aggarwal"/>
-          <p class="speaker-name">Ritu Aggarwal</p>
-          <p>University of Maryland</p>
-        </center>
-      </div>
-      <div class="col-md-3">
-        <center>
-          <img src="images/john-brahim.png" alt="John Brahim" />
-          <p class="speaker-name">John Brahim</p>
-          <p>Capgemini, CEO, Insights & Data Global Practice</p>
-        </center>
+
+    <!--Registration-->
+    <div id="registration" class="container registration">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>REGISTRATION</h3>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-3">
+            <div class="col-md-10 col-md-offset-1 div1">
+              <h2>SPECIAL OFFER</h2>
+              <p class="p1">(till 1st May 2017)</p>
+              <p class="p2">Payment to be sent on or<br />before May 1st, 2017</p>
+              <div class="col-xs-12 border-btm">
+                <div class="col-xs-5 left"><p class="p1">Member</p></div>
+                <div class="col-xs-7 left"><p class="big"><i class="fa fa-inr"></i>9,500<br /><i class="fa fa-dollar"></i>138</p></div>
+              </div>
+              <div class="col-xs-12">
+                <div class="col-xs-5 left"><p class="p1">Non-Member</p></div>
+                <div class="col-xs-7 left"><p class="big"><i class="fa fa-inr"></i>9,500<br /><i class="fa fa-dollar"></i>138</p></div>
+              </div>
+              <div class="col-xs-12">
+                <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-10 col-md-offset-1 div2">
+              <h2>SPECIAL OFFER</h2>
+              <p class="p1">(till 1st May 2017)</p>
+              <p class="p2">Payment to be sent on or<br />before May 1st, 2017</p>
+              <div class="col-xs-12 border-btm">
+                <div class="col-xs-5 left"><p class="p1">Member</p></div>
+                <div class="col-xs-7 left"><p class="big"><i class="fa fa-inr"></i>10,500<br /><i class="fa fa-dollar"></i>152</p></div>
+              </div>
+              <div class="col-xs-12">
+                <div class="col-xs-5 left"><p class="p1">Non-Member</p></div>
+                <div class="col-xs-7 left"><p class="big"><i class="fa fa-inr"></i>11,000<br /><i class="fa fa-dollar"></i>159</p></div>
+              </div>
+              <div class="col-xs-12">
+                <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-10 col-md-offset-1 div3">
+              <h2>SPECIAL OFFER</h2>
+              <p class="p1">(till 1st May 2017)</p>
+              <p class="p2">Payment to be sent on or<br />before May 1st, 2017</p>
+              <div class="col-xs-12 border-btm">
+                <div class="col-xs-5 left"><p class="p1">Member</p></div>
+                <div class="col-xs-7 left"><p class="big"><i class="fa fa-inr"></i>12,500<br /><i class="fa fa-dollar"></i>181</p></div>
+              </div>
+              <div class="col-xs-12">
+                <div class="col-xs-5 left"><p class="p1">Non-Member</p></div>
+                <div class="col-xs-7 left"><p class="big"><i class="fa fa-inr"></i>13,500<br /><i class="fa fa-dollar"></i>196</p></div>
+              </div>
+              <div class="col-xs-12">
+                <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-10 col-md-offset-1 div4">
+              <h2>SPECIAL OFFER</h2>
+              <p class="p1">(till 1st May 2017)</p>
+              <p class="p2">Payment to be sent on or<br />before May 1st, 2017</p>
+              <div class="col-xs-12 border-btm">
+                <div class="col-xs-5 left"><p class="p1">Member</p></div>
+                <div class="col-xs-7 left"><p class="big"><i class="fa fa-inr"></i>14,500<br /><i class="fa fa-dollar"></i>210</p></div>
+              </div>
+              <div class="col-xs-12">
+                <div class="col-xs-5 left"><p class="p1">Non-Member</p></div>
+                <div class="col-xs-7 left"><p class="big"><i class="fa fa-inr"></i>15,500<br /><i class="fa fa-dollar"></i>225</p></div>
+              </div>
+              <div class="col-xs-12">
+                <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 bottom">
+          <p class="p1">10% Group Discount (for 03 or more delegates)</p>
+          <p class="p2">Applicable for Early Bird & Regular Fee only.</p>
+          <p class="p3">We have closed the Online Registration. You can register with Onsite Fee at the venue and carry payment in the form of DD/Cheque/Credit Card/Cash. For any clarification, please contact with Praveen at 91 40 66366111.</p>
+        </div>
       </div>
     </div>
+
+    <!--Venue-->
+    <div id="venue" class="container venue">
+      <div  class="row">
+        <div class="col-md-12">
+          <h3>VENUE</h3>
+        </div>
+        <div class="col-md-12">
+          <img src="images/map.png" />
+        </div>
+        <div class="col-md-8 col-md-offset-2 mar-top">
+          <div class="col-md-6 div1">
+            <h1>Hyderabad<br />International<br />Convention Centre</h1>
+            <h2>Will host the <span>Big Data & Analytics Summit</span> 2017</h2>
+            <p>Hotel Novotel is sold out on 22nd June NASSCOM has negotiated special rates with alternate hotels for participants. Please click here to check out the alternate accommodation offers.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/venue.png" />
+          </div>
+        </div>
+        <div class="col-md-12 div2">
+          <div class="col-md-4 col-md-offset-2">
+            <p class="p1">Novotel & HICC Complex (Near HITEC City)<br /> Cyberabad Post Office, Hyderabad - 500 081</p>
+          </div>
+          <div class="col-md-4">
+            <p class="p2">Tel: + 91 (40) 6616 3000<br /> + 91 (40) 6682 4422</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--Footer-->
-    <div class="row" style="padding: 20px 0px;text-align:center;">
-      <p style="display:inline-block;color:#99a9b5;font-size: 10px;">
-        © Copyright 2017
-        <span style="color:#00bcd4;">NASSCOM</span>
-      </p>
+    <div class="container footer">
+      <div class="row">
+        <p>
+          © Copyright 2017
+          <span>NASSCOM</span>
+        </p>
+      </div>
     </div>
   </div>
   <script>
-    function akshay() {
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover({
+        placement: 'bottom',
+        trigger: 'hover',
+        html: true
+      });
+    });
+    function developer() {
       console.log("*******************************************************");
       console.log("|| This page is developed and created by Akshay Jain ||");
       console.log("*******************************************************");
