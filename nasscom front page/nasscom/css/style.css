@@ -7,8 +7,9 @@ body {
   background: url("../images/cover-image-1.png") no-repeat center center fixed;
   background-size: cover;
   font-family: 'Montserrat', sans-serif; }
-  body h1, body h3 {
-    font-size: 30px;
+  body h3, body h1 {
+    font-size: 30px; }
+  body h1 {
     text-transform: uppercase;
     letter-spacing: 1px; }
   body p {
@@ -40,15 +41,16 @@ body {
   .navbar img {
     width: 150px; }
 
+.navbar-default .navbar-nav > li {
+  margin-right: 10px; }
 .navbar-default .navbar-nav > li > a {
   color: #fff;
   font-weight: 300;
-  padding-right: 10px;
   font-size: 11px; }
 .navbar-default .navbar-collapse, .navbar-default .navbar-default .navbar-form {
   border-color: transparent; }
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-default .navbar-nav > li > a:hover {
-  color: #02bef3 !important;
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #02bef3;
   background-color: transparent; }
 
 .register-btn {
@@ -116,8 +118,10 @@ body {
   .middle-section .key-theme {
     color: #2d2d2d;
     text-align: center; }
-    .middle-section .key-theme h3 {
+    .middle-section .key-theme h3, .middle-section .key-theme body h1, body .middle-section .key-theme h1 {
       padding: 30px 0px; }
+    .middle-section .key-theme .col-md-4 {
+      padding: 0px 10px; }
     .middle-section .key-theme .box {
       background: white;
       box-shadow: 1px 1px 7px #ddd;
@@ -126,7 +130,7 @@ body {
       margin-bottom: 20px; }
       .middle-section .key-theme .box img {
         width: 100%; }
-      .middle-section .key-theme .box h3 {
+      .middle-section .key-theme .box h3, .middle-section .key-theme .box body h1, body .middle-section .key-theme .box h1 {
         vertical-align: central; }
       .middle-section .key-theme .box .pover {
         display: list-item;
@@ -151,7 +155,7 @@ body {
         padding-top: 10px; }
       .middle-section .tables .table1 .col-md-4 {
         padding: 0px; }
-      .middle-section .tables .table1 h3 {
+      .middle-section .tables .table1 h3, .middle-section .tables .table1 body h1, body .middle-section .tables .table1 h1 {
         font-family: 'Montserrat', sans-serif;
         margin: 0px;
         background: #a9cf56;
@@ -167,7 +171,7 @@ body {
       padding: 0px;
       height: 630px;
       margin-bottom: 20px; }
-      .middle-section .tables .table2 h3 {
+      .middle-section .tables .table2 h3, .middle-section .tables .table2 body h1, body .middle-section .tables .table2 h1 {
         font-family: 'Montserrat', sans-serif;
         margin: 0px;
         background: #02bef3;
@@ -181,7 +185,7 @@ body {
       padding: 0px;
       height: 630px;
       margin-bottom: 20px; }
-      .middle-section .tables .table3 h3 {
+      .middle-section .tables .table3 h3, .middle-section .tables .table3 body h1, body .middle-section .tables .table3 h1 {
         font-family: 'Montserrat', sans-serif;
         margin: 0px;
         background: #f16e52;
@@ -196,7 +200,7 @@ body {
   position: relative;
   top: 50px;
   padding: 0px 0px 30px 0px; }
-  .speakers h3 {
+  .speakers h3, .speakers body h1, body .speakers h1 {
     margin-bottom: 30px; }
   .speakers img {
     padding: 20px;
@@ -214,7 +218,7 @@ body {
   background: white; }
   .sponsors .div1, .sponsors .registration .div2, .registration .sponsors .div2, .sponsors .registration .div3, .registration .sponsors .div3, .sponsors .registration .div4, .registration .sponsors .div4 {
     padding-left: 0px; }
-  .sponsors h3 {
+  .sponsors h3, .sponsors body h1, body .sponsors h1 {
     padding: 30px 0px 10px 0px; }
   .sponsors .p1 {
     font-weight: bold;
@@ -225,6 +229,8 @@ body {
       width: 80px; }
     .sponsors .mar-btm p {
       text-align: left; }
+  .sponsors .div2 .col-md-3 {
+    padding: 15px; }
   .sponsors .div2 p {
     color: #a1a1a1;
     font-size: 10px;
@@ -236,7 +242,9 @@ body {
 
 .registration {
   text-align: center; }
-  .registration h3 {
+  .registration .col-md-3 {
+    padding: 0px; }
+  .registration h3, .registration body h1, body .registration h1 {
     margin: 50px; }
   .registration .div1, .registration .div2, .registration .div3, .registration .div4 {
     padding: 0px;
@@ -294,7 +302,7 @@ body {
   .registration .bottom .p1 {
     font-size: 25px;
     padding: 20px 0px;
-    margin: 50px 0px 10px 0px;
+    margin: 50px 20px 10px 20px;
     border-spacing: 2px;
     border-style: solid;
     border-image: url(../images/border.png) 30 stretch; }
@@ -307,10 +315,12 @@ body {
   text-align: center;
   color: #2d2d2d;
   background: white; }
+  .venue h3, .venue body h1, body .venue h1 {
+    margin: 30px; }
   .venue div {
     padding: 0px; }
-  .venue h3 {
-    padding: 30px 0px; }
+    .venue div img {
+      width: 100%; }
   .venue .mar-top {
     position: relative;
     top: -200px;
@@ -327,7 +337,8 @@ body {
         height: 350px;
         float: right; }
     .venue .mar-top h1 {
-      font-size: 25px; }
+      font-size: 23px;
+      margin: 0px 0px 10px 0px; }
     .venue .mar-top h2 {
       font-size: 20px; }
       .venue .mar-top h2 span {

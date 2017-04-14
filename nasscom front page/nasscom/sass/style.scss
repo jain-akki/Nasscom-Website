@@ -9,8 +9,11 @@ body {
   background: url('../images/cover-image-1.png') no-repeat center center fixed; 
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
-  h1,h3 {
+  h3 {
     font-size: 30px;
+  }
+  h1{
+    @extend h3;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -51,17 +54,19 @@ body {
 
 }
 .navbar-default{
+  .navbar-nav>li{
+    margin-right:10px;
+  }
   .navbar-nav>li>a {
      color:#fff; 
      font-weight: 300;
-     padding-right: 10px;
      font-size: 11px;
   } 
   .navbar-collapse, .navbar-default .navbar-form {
       border-color: transparent;
   }
-  .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-      color: #02bef3 !important;
+  .navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+      color: #02bef3;
       background-color: transparent;
   }
 } 
@@ -147,6 +152,9 @@ body {
     text-align:center;
     h3{
       padding:30px 0px;
+    }
+    .col-md-4{
+      padding:0px 10px;
     }
     .box{
       background: white;
@@ -286,10 +294,12 @@ body {
     }
   }
   .div2{
+    .col-md-3{
+      padding:15px;
+    }
     p{
       color: #a1a1a1;
       font-size: 10px;
-      //font-family: 'Montserrat-Regular';
       font-weight: normal;
       padding: 30px 0 10px 0px;
       text-transform: uppercase;
@@ -302,6 +312,9 @@ body {
 
 .registration{
   text-align:center;
+  .col-md-3{
+    padding:0px;
+  }
   h3{
     margin:50px;
   }
@@ -386,7 +399,7 @@ body {
     .p1{
       font-size:25px;
       padding:20px 0px;
-      margin:50px 0px 10px 0px;
+      margin:50px 20px 10px 20px;
       border-spacing: 2px;
       border-style:solid;
       border-image: url(../images/border.png) 30 stretch;
@@ -404,14 +417,15 @@ body {
 .venue{
   text-align:center;
   color:#2d2d2d;
-  //background: url('../images/bg3.png') no-repeat center center fixed; 
-  //background-size:cover;
   background:white;
+  h3{
+    margin:30px;
+  }
   div{
      padding:0px;
-  }
-  h3{
-    padding: 30px 0px;
+     img{
+       width:100%;
+     }
   }
   .mar-top{
     position: relative;
@@ -432,7 +446,8 @@ body {
       }
     }
     h1{
-      font-size:25px;
+      font-size:23px;
+      margin:0px 0px 10px 0px;
     }
     h2{
       font-size:20px;
