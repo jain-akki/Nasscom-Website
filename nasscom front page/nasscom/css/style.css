@@ -4,8 +4,6 @@
   src: url(aperture3.2-webfont.ttf) format("truetype"); }
 body {
   color: white;
-  background: url("../images/cover-image-1.png") no-repeat center center fixed;
-  background-size: cover;
   font-family: 'Montserrat', sans-serif; }
   body h3, body h1 {
     font-size: 30px; }
@@ -15,6 +13,9 @@ body {
   body p {
     padding: 0px;
     margin: 0px; }
+  body .bg1 {
+    background: url("../images/cover-image-1.png") no-repeat center center fixed;
+    background-size: cover; }
   body .bg2 {
     background: url("../images/bg3.png") no-repeat center center fixed;
     background-size: cover; }
@@ -198,8 +199,7 @@ body {
   color: white;
   text-align: center;
   position: relative;
-  top: 50px;
-  padding: 0px 0px 30px 0px; }
+  top: 50px; }
   .speakers h3, .speakers body h1, body .speakers h1 {
     margin-bottom: 30px; }
   .speakers img {
